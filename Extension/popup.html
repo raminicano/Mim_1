@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>민원 자동 분류기</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background">
+    <div class="container">
+      <!-- 내비게이션 섹션-->
+      <div class="navigation">
+        <!-- 로고 -->
+        <img class="logo" src="https://drive.google.com/uc?id=17aTY9vB3bcEwBsEZu3_mkyCQrsOjbYZG&export=download height="180" width="120" alt="Min-1">
+        <!-- 메뉴 링크들 -->
+        <div class="menu">
+          <div class="home">Home</div>
+          <div class="about-us">About Us</div>
+        </div>
+      </div>
+      <!-- 제목 -->
+      <div class="mintitle">민원 자동 분류기</div>
+      <!-- 분류 시작 버튼 -->
+        <button id = "submit" class="start-button">분류 시작</button>
+      <!-- 지역 선택 드롭다운 -->
+        <div class="input-row">
+        <div class="department-box blue-box">구 이름</div>
+        <div class="input-box">
+          <div class="dropdown-box">
+            <select id="region">
+              <option value="구 이름을 선택하세요">구 이름을 선택하세요</option>
+              <option value="강남구">강남구</option>
+              <option value="강동구">강동구</option>
+              <option value="강북구">강북구</option>
+              <option value="강서구">강서구</option>
+              <option value="관악구">관악구</option>
+              <option value="광진구">광진구</option>
+              <option value="구로구">구로구</option>
+              <option value="금천구">금천구</option>
+              <option value="노원구">노원구</option>
+              <option value="도봉구">도봉구</option>
+              <option value="동대문구">동대문구</option>
+              <option value="동작구">동작구</option>
+              <option value="마포구">마포구</option>
+              <option value="서대문구">서대문구</option>
+              <option value="서초구">서초구</option>
+              <option value="성동구">성동구</option>
+              <option value="성북구">성북구</option>
+              <option value="송파구">송파구</option>
+              <option value="양천구">양천구</option>
+              <option value="영등포구">영등포구</option>
+              <option value="용산구">용산구</option>
+              <option value="은평구">은평구</option>
+              <option value="종로구">종로구</option>
+              <option value="중구">중구</option>
+              <option value="중랑구">중랑구</option>
+            </select>             
+          </div>
+        </div>
+      </div>
+      <!-- 민원 제목 입력 필드 -->
+      <div class="input-row">
+        <div class="department-box blue-box">민원 제목</div>
+        <div class="input-box">
+          <input id="title" type="text" class="input-field" placeholder="민원 제목을 입력해주세요">
+        </div>
+      </div>
+      <!-- 민원 내용 입력 필드 -->
+      <div class="input-row">
+        <div id="complaint-label" class="department-box blue-box">민원 내용</div>
+        <div class="input-box">
+          <textarea id="complaint" type="text" class="input-field"  rows="7" placeholder="민원 내용을 입력해주세요"></textarea>
+        </div>
+      </div>
+      <!-- 결과 섹션 -->
+      <div class="input-row">
+        <div id="result-label" class="department-box blue-box">담당 부서</div>
+        <div class= "input-box">
+          <div class="input-field placeholder" id="result">
+          <!-- 나중에 출력될 부서명을 여기에 동적으로 추가 -->
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

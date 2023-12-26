@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "민원 분석기",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "/Image/onion.png", 
+        "48": "/Image/onion.png",
+        "128": "/Image/onion.png"
+      } 
+    },
+    "icons": {
+      "16": "/Image/onion.png",
+      "48": "/Image/onion.png",
+      "128": "/Image/onion.png"  
+  } ,
+  "host_permissions": [
+      "http://localhost:5001/"  
+  ]
+  
+}
+
+
+
+
+
+
